@@ -6,64 +6,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    p {
-      font-family: Roboto, Arial;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    .thumbnail {
-      width: 100%;
-    }
-    .search-bar {
-      font-size: 20px;
-      display: block;
-    }
-    .video-title {
-     margin-top: 0;
-     font-size: 14px;
-     font-weight: 500;
-     line-height: 20px;
-     margin-bottom: 12px;
-    }
-
-
-    .profile-picture {
-      width: 40px;
-      border-radius: 50px;
-    }
-
-    .thumbnail-row {
-      margin-bottom: 12px ;
-    }
-
-    .video-author,
-    .video-stats {
-      font-size: 12px;
-      color: rgb(96, 96, 96)
-    }
-
-    .video-author {
-      margin-bottom: 4px;
-    }
-
-    .video-info-grid {
-      display: grid;
-      grid-template-columns: 50px 1fr;
-    }
-    
-    .video-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 48px;
-      column-gap: 16px;
-    }
-
-
-  </style>
+<link rel="stylesheet" href="Styles/general.css">
+<link rel="stylesheet" href="Styles/header.css">
+<link rel="stylesheet" href="Styles/video.css">
 </head>
 <body>
-  <input class="search-bar" type="text" placeholder="search"> 
+  <div class="header">
+    <div class="left-section">
+      <img class="humberger" src="/youtube-icons/hamburger-menu.svg" alt="hamburger-menu">
+      <img src="/youtube-icons/youtube-logo.svg" alt="youtube-logo" class="youtube-logo">
+    </div>
+    <div class="middle-section">
+      <input class="search-box" type="text" placeholder="Search">
+      <button class="search-button"><img src="/youtube-icons/search.svg" class="search-icon" alt="search"></button>
+      <button class="voice-button"><img src="/youtube-icons/voice-search-icon.svg" alt="voiceSearch" class="voice-search"></button>
+    </div>
+    <div class="right-section">
+      <img src="/youtube-icons/upload.svg" alt="create" class="create-video">
+      <img src="/youtube-icons/youtube-apps.svg" alt="youtube-apps" class="youtube-apps">
+      <img src="/youtube-icons/notifications.svg" alt="notificaitons" class="notifications">
+      <img src="/youtube-icons/profile-dp.jpg" alt="profile-dp" class="profile-dp">
+    </div>
+  </div>
+
   <div class="video-grid">
   <div class="video-preview">
     <div class="thumbnail-row">
