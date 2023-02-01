@@ -4,7 +4,7 @@
   height: 57px;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 100;
 
   position: fixed;
   top:0;
@@ -30,7 +30,7 @@
 .notification-count {
  background-color: #cc0000;
  position: absolute;
- right: 0;
+ right: -6px;
  padding-right: 6px;
  padding-left: 5px;
  padding-bottom: 1px;
@@ -45,6 +45,7 @@
  border-style: solid;
  border-width: 2px;
 }
+
 
 .notification-number {
   display: flex;
@@ -68,7 +69,7 @@
 .search-box {
  width: 100%;
  max-width: 364px;
- height: 38px;
+ height: 35px;
  border-style:  solid ;
  border-width: 1px;
  border-color: #cccccc;
@@ -111,8 +112,60 @@
  border-color: #cccccc;
  border-top-right-radius: 2px;
  border-bottom-right-radius: 2px;
+ position: relative;
 }
 
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notification-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute; 
+  background-color: rgb(150, 150, 150); 
+  color: white;
+  padding-top: 4px;
+  padding-left:8px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notification-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+
+.search-button,
+.voice-button,
+.upload-icon-container,
+.apps-icon-container,
+.notification-icon-container {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.upload-icon-container .tooltip
+ {
+  left: 4px;
+}
+
+.apps-icon-container .tooltip,
+.notification-icon-container .tooltip {
+  margin-left: 25px;
+}
 .voice-search {
   height: 21px;
   width: 23px;
@@ -124,6 +177,7 @@
   padding: 6px;
   border-radius: 100px;
   border: none;
+  position: relative;
 }
 
 .create-video,
@@ -131,7 +185,7 @@
 .notifications
  {
   height: 25px;
-  margin-left: 18px;
+  margin-left: 12px;
 }
 
 .youtube-apps,
