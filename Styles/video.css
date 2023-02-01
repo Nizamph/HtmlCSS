@@ -12,17 +12,34 @@ p {
  font-size: 14px;
  font-weight: 500;
  line-height: 20px;
- margin-bottom: 12px;
+ margin-bottom: 8px;
 }
 
 
 .profile-picture {
-  width: 40px;
+  width: 37px;
   border-radius: 50px;
 }
 
 .thumbnail-row {
-  margin-bottom: 12px ;
+  margin-bottom: 8px ;
+  position: relative;
+}
+
+.time-line {
+  background-color: black;
+  color: white;
+  position:absolute;
+  bottom:12px;
+  right: 5px;
+  font-family: Roboto;
+  font-size: 12px;
+  padding: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding-bottom: 4px;
 }
 
 .video-author,
@@ -31,18 +48,20 @@ p {
   color: rgb(96, 96, 96)
 }
 
+
 .video-author {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .video-info-grid {
+
   display: grid;
   grid-template-columns: 50px 1fr;
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 48px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 41px;
   column-gap: 16px;
 }
